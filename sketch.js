@@ -66,14 +66,7 @@ function draw() {
   
 }
 
-function drawLine (constraint) {
-	bobBodyPosition = constraint.bodyA.position;    
-	roofBodyPosition = constraint.bodyB.position;
-	roofBodyOffset = constraint.pointB;
-	roofBodyX= roofBodyPositiion.x + roofBodyOffset.x;
-	roofBodyY= roofBodyPosition.y + roofBodyOffset.y; 
-	line(bobBodyPosition.x, bobBodyPosition.y, roofBodyX, roofBodyY);           
-}
+
 
 function keyPressed () {
 	if (keyCode === UP_ARROW) {
